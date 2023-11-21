@@ -1,135 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo-List</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            background-color: hsl(218, 14%, 16%);
-            font-family: Arial;
-        }
-        .todo-list-grid, .todo-input-grid{
-            display: grid;
-            grid-template-columns: 210px 160px 100px;
-            column-gap: 8px;
-            row-gap: 10px;
-        }
-        .todo-input-grid{
-            margin-bottom: 10px;
-        }
-        .name-input, .todo-input-grid{
-            font-size: 15px;
-            padding: 6px;
-        }
-        /* .date-input{
-        } */
-        .add-todo-btn{
-        background-color: #319B77;
-        color: white;
-        font-size: 15px;
-        font-weight: bold;
-        border: none;
-        border-radius: 5px; 
-        cursor: pointer;
-        }
-        .add-todo-btn:hover{
-            transition: 0s;
-            background-color: transparent;
-            border: 3px solid aqua ;
-            color: aqua;
-            
-        }
-        .bigdiv{
-            display: flex;
-            justify-content: center;
-            height:51.2vmax;
-            align-items: center;
-            background-color:#000000;
-            
-        }
-        .midbtn{
-            padding: 10px;
-            background-color: #161616;
-            border-radius: 10px;
-        }
-        input{
-            padding: 8px;
-            color: #319B77;
-            font-size: 15px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        input:hover{
-            border: 3px solid aqua;
-        }
-        p{
-            display: flex;justify-content: center;color: #319B77;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            font-size: 24px;
-            font-weight: bolder;
-            font-family:Arial, Helvetica, sans-serif;
-
-        }
-        input.name-input{
-            color: rgb(255, 255, 255);
-            background-color:transparent;
-            border: 3px solid aqua;
-        }
-        .date-input{
-            background-color: transparent;
-            color: aqua;
-            border: 3px solid aqua;
-                    }
-        .datascss{
-            color: aqua;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .delete-btn{
-            color: white ;
-            margin-left: 14px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 11px;
-            background-color: #af0505;
-            border-radius: 5px;
-            font-size: 15px;
-            font-weight: bolder;
-        }
-         .delete-btn:hover{
-            background-color: transparent;
-            color: aqua;
-            border: 3px solid aqua;
-         }
-
-        
-    
-    </style>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div class="bigdiv">
         <div class="midbtn">
-    <p>Todo List</p>
-    <div class="todo-input-grid">
-    <input class="js-name-input name-input" type="text" placeholder="Task name" onkeydown="enterButton(event)">
-    <input type="date" class="js-input-dueDate date-input">
-    <button class="js-btn add-todo-btn" onclick="
-    addToDo();
-    ">Add</button>
-    </div>
+            <p>Todo List</p>
+            <div class="todo-input-grid">
+                <input class="js-name-input name-input" type="text" placeholder="Task name"
+                    onkeydown="enterButton(event)">
+                <input type="date" class="js-input-dueDate date-input">
+                <button class="js-btn add-todo-btn" onclick="
+                     addToDo();
+                 ">Add</button>
+            </div>
 
-    <div class="js-todo-list-div todo-list-grid"></div>
+            <div class="js-todo-list-div todo-list-grid"></div>
 
+        </div>
     </div>
-</div>
 
 
 
@@ -149,4 +43,5 @@
     <script src="index.js">
     </script>
 </body>
+
 </html>
