@@ -29,11 +29,11 @@
  /* .date-input{
         } */
  .add-todo-btn {
-     background-color: #319B77;
+     background-color: transparent;
      color: white;
      font-size: 15px;
      font-weight: bold;
-     border: none;
+     border: 3px solid aqua;
      border-radius: 5px;
      cursor: pointer;
  }
@@ -106,21 +106,48 @@
 
  .delete-btn {
      color: white;
+     margin-left: 8px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    padding: 12px 48px 12px 48px;
+     background-color: transparent;
+     border-radius: 5px;
+     font-size: 15px;
+     font-weight: bolder;
+     border: 3px solid red;
+ }
+
+ .done-btn {
+     color: white;
      margin-left: 14px;
      display: flex;
      justify-content: center;
      align-items: center;
-     padding: 11px;
-     background-color: #af0505;
+     padding: 12px 48px 12px 48px;
+     background-color: transparent;
      border-radius: 5px;
      font-size: 15px;
-     font-weight: bolder;
+     font-weight: bold;
+     border: 3px solid red;
  }
+ /* background-color: #319B77;
+ color: white;
+ font-size: 15px;
+ font-weight: bold;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;*/
 
  .delete-btn:hover {
      background-color: transparent;
-     color: aqua;
-     border: 3px solid aqua;
+     color: red;
+     border: 3px solid red;
+ }
+ .done-btn:hover {
+     background-color: transparent;
+     color: red;
+     border: 3px solid red;
  }
   .strikethrough {
       text-decoration: line-through;

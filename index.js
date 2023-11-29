@@ -111,8 +111,8 @@ function renderTodoList() {
       const html = `
             <div class="datascss">${name}</div>
             <div class="datascss">${dueDate}</div>
-            <button onclick="toDoList.splice(${i}, 1); renderTodoList();" class="delete-btn">Delete</button>
-            <button onclick="updateToDoStatus(${i});">Done</button>
+            <button onclick="toDoList.splice(${i}, 1); renderTodoList();" class="delete-btn" style="padding: 11px 47px";>Delete</button>
+            <button onclick="updateToDoStatus(${i});" class="done-btn" style="padding: 11px 47px">Done</button>
         `;
       toDoListHTML += html;
    }
