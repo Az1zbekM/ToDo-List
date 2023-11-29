@@ -153,3 +153,68 @@
   .strikethrough {
       text-decoration: line-through;
   }
+  
+  /* Your existing CSS code */
+
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 600px) {
+
+      /* Apply styles for screens up to 600px wide */
+      .todo-list-grid,
+      .todo-input-grid {
+          grid-template-columns: 1fr;
+          /* Set to one column for smaller screens */
+      }
+
+      .add-todo-btn {
+          padding: 8px 16px;
+          /* Adjust padding for smaller screens */
+      }
+
+      .bigdiv {
+          padding: 5px;
+          /* Add padding for smaller screens */
+      }
+
+      .delete-btn,
+      .done-btn {
+          padding: 8px 16px;
+          /* Adjust padding for smaller screens */
+      }
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 900px) {
+
+      /* Apply styles for screens between 601px and 900px wide */
+      .delete-btn,
+      .done-btn {
+          padding: 10px 20px;
+          /* Adjust padding for medium screens */
+      }
+  }
+
+  @media screen and (min-width: 901px) and (max-width: 1200px) {
+
+      /* Adjust grid layout for screens between 901px and 1200px wide */
+      .todo-list-grid,
+      .todo-input-grid {
+          grid-template-columns: repeat(3, 1fr);
+          /* Set to three columns for wider medium screens */
+      }
+
+      .delete-btn,
+      .done-btn {
+          padding: 12px 24px;
+          /* Adjust padding for larger screens */
+      }
+  }
+
+  @media screen and (min-width: 1201px) {
+
+      /* Apply styles for screens wider than 1200px */
+      .todo-list-grid,
+      .todo-input-grid {
+          grid-template-columns: repeat(4, 1fr);
+          /* Set to four columns for larger screens */
+      }
+  }

@@ -140,7 +140,7 @@ function addToDo() {
    // Conditionally render the todo list
    if (toDoList.length > 0) {
       renderTodoList();
-   }
+   }        
 }
 
 function emptySpace(value) {
